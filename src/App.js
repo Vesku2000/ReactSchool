@@ -53,7 +53,7 @@ function App(){
       amount = {expenses[3].amount}
       date = {expenses[3].date}
       />
-      <h2>Valtteri VAMK</h2>
+      <h2 className='name'>Valtteri VAMK</h2>
     </div>
   )
 }

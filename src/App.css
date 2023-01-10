@@ -1,3 +1,10 @@
+:root {
+  --main-color: #C0DEFF;
+  --text-color: #fff;
+  --second-color: #C0DEFF;
+  --third-color: #FFE5F1;
+  --pane-padding: 5px 42px;
+}
 .App {
   text-align: center;
 }
