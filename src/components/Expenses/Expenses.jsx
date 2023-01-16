@@ -7,7 +7,7 @@ import './Expenses.css'
 const Expense = (props) => {
 
     const items = props.expenses.map((expense, index) => (
-        <Card>
+        <Card className="expense-items">
         <ExpenseItem
 
                 key={index}
