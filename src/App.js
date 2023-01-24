@@ -1,41 +1,45 @@
-
+import React, { useState } from 'react';
 import Expenses from './components/Expenses/Expenses';
 import NewExpense from './components/NewExpense/NewExpense';
 import './App.css';
 
-function App(){
 
-  const expenses = [
-    {
-      id: 'e1',
-      title: 'Toilet paper',
-      amount: 17.99,
-      date: new Date("2023-01-01"),
-    },
-    {
-      id: 'e2',
-      title: 'TV',
-      amount: 399.99,
-      date: new Date("2023-01-04"),
-    },
-    {
-      id: 'e3',
-      title: 'Laptop',
-      amount: 1097.99,
-      date: new Date("2023-02-01"),
-    },
-    {
-      id: 'e4',
-      title: 'Car',
-      amount: 17000.99,
-      date: new Date("2023-01-01"),
-    },
-  ];
+const dummmy_expenses = [
+  {
+    id: 'e1',
+    title: 'Toilet paper',
+    amount: 17.99,
+    date: new Date("2023-01-01"),
+  },
+  {
+    id: 'e2',
+    title: 'TV',
+    amount: 399.99,
+    date: new Date("2023-01-04"),
+  },
+  {
+    id: 'e3',
+    title: 'Laptop',
+    amount: 1097.99,
+    date: new Date("2023-02-01"),
+  },
+  {
+    id: 'e4',
+    title: 'Car',
+    amount: 17000.99,
+    date: new Date("2023-01-01"),
+  },
+];
+
+const App = () => {
+
+  const [expenses, setExpenses] = useState(dummmy_expenses);
 
   const addExpenseHandler = expense => {
-    console.log('In App.js');
-    console.log(expense);
-  }
+    setExpenses((preExpenses) => {
+      return [expense, ...preExpenses];
+    })
+  };
 
   return(
     
