@@ -41,7 +41,7 @@ function App(){
     
     <div>
       <NewExpense onAddExpense={addExpenseHandler}/>
-      <Expenses expenses={expenses}/>
+      <Expenses items={expenses}/>
       <h2 className='name'>Valtteri VAMK</h2>
       <h3 className='name'>e2101778</h3>
     </div>
