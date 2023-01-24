@@ -9,25 +9,37 @@ const dummmy_expenses = [
     id: 'e1',
     title: 'Toilet paper',
     amount: 17.99,
-    date: new Date("2023-01-01"),
+    date: new Date("2019-01-01"),
   },
   {
     id: 'e2',
     title: 'TV',
     amount: 399.99,
-    date: new Date("2023-01-04"),
+    date: new Date("2021-01-04"),
   },
   {
     id: 'e3',
     title: 'Laptop',
     amount: 1097.99,
-    date: new Date("2023-02-01"),
+    date: new Date("2022-02-01"),
   },
   {
     id: 'e4',
     title: 'Car',
     amount: 17000.99,
-    date: new Date("2023-01-01"),
+    date: new Date("2021-01-01"),
+  },
+  {
+    id: 'e5',
+    title: 'Playstation 5',
+    amount: 499.99,
+    date: new Date("2022-01-01"),
+  },
+  {
+    id: 'e6',
+    title: 'Xbox 5',
+    amount: 299.99,
+    date: new Date("2020-01-01"),
   },
 ];
 
