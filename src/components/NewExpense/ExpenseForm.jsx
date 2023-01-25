@@ -4,9 +4,12 @@ import './ExpenseForm.css';
 
 const ExpenseForm = (props) => {
 
+    
+
     const [enteredTitle, setEnteredTitle] = useState('');
     const [enteredAmount, setEnteredAmount] = useState('');
     const [enteredDate, setEnteredDate] = useState('');
+   
 
     const titleChangeHandler = (event) => {
         setEnteredTitle(event.target.value);
@@ -62,7 +65,9 @@ const ExpenseForm = (props) => {
                 </div>
             </div>
             <div className='new-expense__actions'>
+            <button type='submit' onClick={props.ToggleForm}>Cancel</button>
                 <button type='submit'>Add Expense</button>
+
             </div>
         </form>
     );
